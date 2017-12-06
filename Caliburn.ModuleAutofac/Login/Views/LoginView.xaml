@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="ModuleSystem.ModuleAutofac.Login.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:cal="http://www.caliburnproject.org"
+             xmlns:helpers="clr-namespace:ModuleSystem.ModuleAutofac.Helper"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Border Background="Red">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="12" />
+                    <RowDefinition Height="auto" MinHeight="21" />
+                    <RowDefinition Height="auto" MinHeight="35" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       Height="26"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top">
+                    <TextBlock>
+                        <Run Text="Username:" />
+                        <Run Foreground="Red" Text="*" />
+                    </TextBlock>
+                </Label>
+
+                <TextBox x:Name="Username"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         Margin="0"
+                         VerticalContentAlignment="Center"
+                         MaxLength="100"
+                         TabIndex="0"
+                         Text=""
+                         TextWrapping="Wrap" />
+
+                <Label Grid.Row="2"
+                       Grid.Column="0"
+                       Height="26"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top">
+                    <TextBlock>
+                        <Run Text="Password:" />
+                        <Run Foreground="Red" Text="*" />
+                    </TextBlock>
+                </Label>
+
+                <PasswordBox x:Name="Password"
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Height="auto"
+                             Margin="0"
+                             VerticalContentAlignment="Center"
+                             MaxLength="100"
+                             TabIndex="1"
+                             helpers:PasswordHelper.Attach="true"
+                             helpers:PasswordHelper.Password="{Binding Password,
+                                                                  Mode=TwoWay,
+                                                                  NotifyOnSourceUpdated=True,
+                                                                  UpdateSourceTrigger=PropertyChanged}" />
+
+                <StackPanel Grid.Row="3"
+                            Grid.Column="1"
+                            Width="160"
+                            Margin="0,5,0,0"
+                            HorizontalAlignment="Left"
+                            Orientation="Horizontal">
+                    <Button Width="72"
+                            Height="25"
+                            Margin="0,10,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Content="Login"
+                            IsDefault="True"
+                            TabIndex="2"
+                            cal:Message.Attach="[Login]" />
+                    <Button Width="68"
+                            Height="25"
+                            Margin="10,10,10,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Content="Cancel"
+                            IsCancel="True"
+                            TabIndex="3"
+                            cal:Message.Attach="[Cancel]" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

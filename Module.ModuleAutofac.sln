@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleSystem.ModuleAutofac", "Caliburn.ModuleAutofac\ModuleSystem.ModuleAutofac.csproj", "{E9D848C6-9758-4F93-9888-80C201F9816A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleSystem.Common", "Caliburn.Common\ModuleSystem.Common.csproj", "{526461EB-3964-4B66-898A-3EAF288250E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleSystem.ModuleA", "Caliburn.ModuleA\ModuleSystem.ModuleA.csproj", "{8FD1AEB5-4450-492C-ABF8-DDBA6D65B5D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleSystem.ModuleB", "Caliburn.ModuleB\ModuleSystem.ModuleB.csproj", "{DEA35AE1-4029-45F0-9A87-0C8F17FABDFD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jobyjamesprismauto.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Caliburn.ModuleAutofac\\ModuleSystem.ModuleAutofac.csproj
+		SccProjectName1 = Caliburn.ModuleAutofac
+		SccLocalPath1 = Caliburn.ModuleAutofac
+		SccProjectUniqueName2 = Caliburn.Common\\ModuleSystem.Common.csproj
+		SccProjectName2 = Caliburn.Common
+		SccLocalPath2 = Caliburn.Common
+		SccProjectUniqueName3 = Caliburn.ModuleA\\ModuleSystem.ModuleA.csproj
+		SccProjectName3 = Caliburn.ModuleA
+		SccLocalPath3 = Caliburn.ModuleA
+		SccProjectUniqueName4 = Caliburn.ModuleB\\ModuleSystem.ModuleB.csproj
+		SccProjectName4 = Caliburn.ModuleB
+		SccLocalPath4 = Caliburn.ModuleB
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9D848C6-9758-4F93-9888-80C201F9816A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D848C6-9758-4F93-9888-80C201F9816A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D848C6-9758-4F93-9888-80C201F9816A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D848C6-9758-4F93-9888-80C201F9816A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526461EB-3964-4B66-898A-3EAF288250E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526461EB-3964-4B66-898A-3EAF288250E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526461EB-3964-4B66-898A-3EAF288250E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526461EB-3964-4B66-898A-3EAF288250E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD1AEB5-4450-492C-ABF8-DDBA6D65B5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD1AEB5-4450-492C-ABF8-DDBA6D65B5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD1AEB5-4450-492C-ABF8-DDBA6D65B5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD1AEB5-4450-492C-ABF8-DDBA6D65B5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA35AE1-4029-45F0-9A87-0C8F17FABDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA35AE1-4029-45F0-9A87-0C8F17FABDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA35AE1-4029-45F0-9A87-0C8F17FABDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA35AE1-4029-45F0-9A87-0C8F17FABDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
